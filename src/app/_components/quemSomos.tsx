@@ -1,13 +1,9 @@
 import foto1 from "@/imagens/03.jpg";
 import {
-  Mail,
-  MapPin,
-  Phone,
   Plus,
   Eye,
   Award,
   Briefcase,
-  Calendar,
   Users,
 } from "lucide-react";
 

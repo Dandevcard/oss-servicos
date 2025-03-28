@@ -15,7 +15,7 @@ import {
   Stars,
   Flag,
 } from "lucide-react";
-import { title } from "process";
+
 import img1 from "@/imagens/01.jpg";
 import img2 from "@/imagens/02.jpg";
 import img3 from "@/imagens/03.jpg";

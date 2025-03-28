@@ -1,21 +1,10 @@
 import Image from "next/image";
-import laaf from "@/imagens/laaf.webp"
-import patrick from "@/imagens/patrick.jpg"
-import Promotora from "@/imagens/melhor.webp"
-import febracis from "@/imagens/febracis1.png"
+import laaf from "@/imagens/laaf.webp";
+import patrick from "@/imagens/patrick.jpg";
+import Promotora from "@/imagens/melhor.webp";
+import febracis from "@/imagens/febracis1.png";
 
-import {
-  Star,
-  Users,
-  BarChart,
-  Award,
-  TrendingUp,
-  Quote,
-  ArrowRight,
-  Instagram,
-  Facebook,
-  Twitter,
-} from "lucide-react";
+import { Star, Users, BarChart, Award, TrendingUp, Quote } from "lucide-react";
 import foto1 from "@/imagens/02.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -36,7 +25,6 @@ const empresas = [
     logo: Promotora,
     nome: "Melhor Promotora",
   },
-
 ];
 
 export default function Clientes() {
@@ -46,14 +34,11 @@ export default function Clientes() {
       className="relative text-white bg-no-repeat bg-cover"
       style={{
         backgroundImage: `url(${foto1.src})`,
-        // backgroundSize: "cover",
         backgroundPosition: "center",
-        // backgroundRepeat: "no-repeat",
       }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
       <div className=" relative mx-auto  py-12">
-        {/* Header Section */}
         <div className="mb-16 text-center">
           <h1 className="mb-4 text-4xl font-bold font-oxanium tracking-tight md:text-5xl">
             Nossos Clientes
@@ -65,7 +50,6 @@ export default function Clientes() {
           </p>
         </div>
 
-        {/* Client Logos */}
         <div className="mb-16 md:px-20">
           <h2 className="mb-8 text-center text-3xl font-bold font-oxanium">
             Empresas que Confiam em Nós
@@ -76,12 +60,14 @@ export default function Clientes() {
                 key={index.nome}
                 className="flex items-center justify-center p-4"
               >
-                <div className=" max-w-28   flex flex-col items-center justify-center">
-          
-                  <Image width={200} height={200} alt="logos"   src={index.logo}/>
+                <div className="max-w-28   flex flex-col items-center justify-center">
+                  <Image
+                    width={200}
+                    height={200}
+                    alt="logos"
+                    src={index.logo}
+                  />
                 </div>
-               
-
               </div>
             ))}
           </div>
@@ -115,7 +101,6 @@ export default function Clientes() {
           </div>
         </div>
 
-        {/* Testimonials */}
         <div className="mb-20 px-4 md:px-20">
           <h2 className="mb-10 text-center text-3xl font-bold ">Depoimentos</h2>
           <div className="grid gap-2 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -184,7 +169,6 @@ export default function Clientes() {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );
