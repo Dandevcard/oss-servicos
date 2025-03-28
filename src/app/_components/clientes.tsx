@@ -7,8 +7,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import user3 from "@/imagens/fotouser3.jpg";
 import user1 from "@/imagens/aa.jpg"
 import user2 from "@/imagens/bb.jpg"
-import user4 from "@/imagens/c.jpg"
-import user5 from "@/imagens/d.jpg"
 
 
 
