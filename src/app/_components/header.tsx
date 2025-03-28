@@ -24,6 +24,7 @@ export default function Header() {
       }
 
       lastScrollY = currentScrollY;
+      setIsMenuOpen(false)
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -55,7 +56,9 @@ export default function Header() {
       }`}
     >
       <div className="flex items-center justify-between pt-10 pb-4 px-8 md:px-12">
-        <Link href="#home" className="flex flex-col items-center"
+        <Link
+          href="#home"
+          className="flex flex-col items-center"
           onClick={(e) => {
             e.preventDefault(); // Previne o comportamento padrão do link
             scrollToSection("#home");
@@ -136,16 +139,15 @@ export default function Header() {
 
       {/* 🔹 Melhorando estrutura do menu mobile */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black/95 h-56 z-40 md:hidden">
-          <div className="flex flex-col items-start justify-start h-40 space-y-2 p-3 text-white ">
+        <div className="fixed inset-0 bg-gray-950 h-56 z-40 md:hidden border-b border-opacity-0">
+          <div className="flex flex-col items-start justify-start h-40 space-y-2 p-10 text-white ">
             <Link
               href="#home"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("#home");
               }}
-              
-              className="text-2xl font-semibold font-oxanium"
+              className="text-xl font-semibold font-oxanium"
             >
               Home
             </Link>
@@ -155,7 +157,7 @@ export default function Header() {
                 e.preventDefault();
                 scrollToSection("#quemSomos");
               }}
-              className="text-2xl font-semibold font-oxanium"
+              className="text-xl font-semibold font-oxanium"
             >
               Quem Somos
             </Link>
@@ -165,7 +167,7 @@ export default function Header() {
                 e.preventDefault();
                 scrollToSection("#services");
               }}
-              className="text-2xl font-semibold font-oxanium"
+              className="text-xl font-semibold font-oxanium"
             >
               Serviços
             </Link>
@@ -175,22 +177,22 @@ export default function Header() {
                 e.preventDefault();
                 scrollToSection("#clientes");
               }}
-              className="text-2xl font-semibold font-oxanium"
+              className="text-xl font-semibold font-oxanium"
             >
               Clientes
             </Link>
-            <Button asChild variant="outline" className="mt-4">
-              <Link
-                href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection("#contact");
-                }}
-                className="font-oxanium font-semibold text-gray-950"
-              >
-                Fale Conosco
-              </Link>
-            </Button>
+
+            <Link
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#contact");
+              }}
+              className="font-oxanium text-xl font-semibold text-gray-50"
+            >
+              Fale Conosco
+            </Link>
+          
           </div>
         </div>
       )}
