@@ -85,7 +85,7 @@ export default function Clientes() {
             </div>
             <div className="flex flex-col items-center">
               <BarChart className="mb-4 h-10 w-10 text-emerald-600" />
-              <h3 className="text-3xl font-bold text-emerald-600">98%</h3>
+              <h3 className="text-3xl font-bold text-emerald-600">98 &quot</h3>
               <p className="text-muted-foreground">Taxa de Satisfação</p>
             </div>
             <div className="flex flex-col items-center">
