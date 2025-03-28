@@ -7,6 +7,7 @@ import febracis from "@/imagens/febracis1.png";
 import { Star, Users, BarChart, Award, TrendingUp, Quote } from "lucide-react";
 import foto1 from "@/imagens/02.jpg";
 import { Card, CardContent } from "@/components/ui/card";
+import user3 from "@/imagens/fotouser3.jpg"
 
 const empresas = [
   {
@@ -85,12 +86,12 @@ export default function Clientes() {
             </div>
             <div className="flex flex-col items-center">
               <BarChart className="mb-4 h-10 w-10 text-emerald-600" />
-              <h3 className="text-3xl font-bold text-emerald-600">98 &quot</h3>
+              <h3 className="text-3xl font-bold text-emerald-600">98 &quot;</h3>
               <p className="text-muted-foreground">Taxa de Satisfação</p>
             </div>
             <div className="flex flex-col items-center">
               <Award className="mb-4 h-10 w-10 text-amber-600" />
-              <h3 className="text-3xl font-bold text-amber-600">10+</h3>
+              <h3 className="text-3xl font-bold text-amber-600">10&#43;</h3>
               <p className="text-muted-foreground">Prêmios Recebidos</p>
             </div>
             <div className="flex flex-col items-center">
@@ -108,8 +109,7 @@ export default function Clientes() {
               {
                 name: "Daniel Cardoso",
                 company: "Tech Solutions",
-                image:
-                  "https://instagram.ffln13-1.fna.fbcdn.net/v/t51.2885-19/379786517_1032571204440704_4397570851507740021_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.ffln13-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QGjNXqo6kKXjzUZI8xrry2oH3cqTMcC4GpJLrIDCqkRJbms5FuWt2UF7A_XUizdd2A&_nc_ohc=ynnZ0X1LIr0Q7kNvgGVuxz5&_nc_gid=RMvA4ZGkylMj3cmghb8AUw&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYFRk82VIJOYdys-sLJPZCcqKIgnd3YKoBVWXfsuKEOfOA&oe=67EAAAB2&_nc_sid=7a9f4b",
+                image:user3,
                 testimonial:
                   "Trabalhar com esta equipe foi uma experiência transformadora para nossa empresa. A qualidade do serviço e o comprometimento com prazos superaram todas as nossas expectativas.",
                 rating: 5,
@@ -117,7 +117,7 @@ export default function Clientes() {
               {
                 name: "João Silva",
                 company: "Inovação Digital",
-                image: "/placeholder.svg?height=100&width=100",
+                image: user3,
                 testimonial:
                   "Desde que começamos a parceria, nossa produtividade aumentou em 40%. As soluções implementadas foram perfeitamente adaptadas às nossas necessidades específicas.",
                 rating: 5,
@@ -125,7 +125,7 @@ export default function Clientes() {
               {
                 name: "Carla Mendes",
                 company: "Global Retail",
-                image: "/placeholder.svg?height=100&width=100",
+                image: user3,
                 testimonial:
                   "A equipe demonstrou um profundo conhecimento do nosso setor e ofereceu insights valiosos que nos ajudaram a superar desafios complexos. Recomendo fortemente.",
                 rating: 4,
@@ -139,7 +139,7 @@ export default function Clientes() {
                   </p>
                   <div className="flex items-center">
                     <Image
-                      src={testimonial.image || "/placeholder.svg"}
+                      src={testimonial.image}
                       alt={testimonial.name}
                       width={50}
                       height={50}
