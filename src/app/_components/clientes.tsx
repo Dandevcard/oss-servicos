@@ -80,7 +80,7 @@ export default function Clientes() {
             <div className="flex flex-col items-center">
               <Users className="mb-4 h-10 w-10 text-blue-700" />
               <h3 className="text-3xl font-bold text-blue-700">
-                100<span className="">+</span>
+                100<span className="">&#43;</span>
               </h3>
               <p className="text-muted-foreground">Clientes Atendidos</p>
             </div>
@@ -135,7 +135,7 @@ export default function Clientes() {
                 <CardContent className="p-4 md:p-8">
                   <Quote className="h-8 w-8 text-primary/40 mb-1 md:mb-4" />
                   <p className="mb-3 md:mb-6 italic text-muted-foreground">
-                    "{testimonial.testimonial}"
+                    {testimonial.testimonial}
                   </p>
                   <div className="flex items-center">
                     <Image
