@@ -5,6 +5,12 @@ import { Star, Users, BarChart, Award, TrendingUp, Quote } from "lucide-react";
 import foto1 from "@/imagens/02.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import user3 from "@/imagens/fotouser3.jpg";
+import user1 from "@/imagens/aa.jpg"
+import user2 from "@/imagens/bb.jpg"
+import user4 from "@/imagens/c.jpg"
+import user5 from "@/imagens/d.jpg"
+
+
 
 
 
@@ -68,7 +74,7 @@ export default function Clientes() {
               {
                 name: "Daniel Cardoso",
                 company: "Tech Solutions",
-                image: user3,
+                image: user1,
                 testimonial:
                   "Trabalhar com esta equipe foi uma experiência transformadora para nossa empresa. A qualidade do serviço e o comprometimento com prazos superaram todas as nossas expectativas.",
                 rating: 5,
@@ -84,7 +90,7 @@ export default function Clientes() {
               {
                 name: "Carla Mendes",
                 company: "Global Retail",
-                image: user3,
+                image: user2,
                 testimonial:
                   "A equipe demonstrou um profundo conhecimento do nosso setor e ofereceu insights valiosos que nos ajudaram a superar desafios complexos. Recomendo fortemente.",
                 rating: 4,
@@ -102,7 +108,7 @@ export default function Clientes() {
                       alt={testimonial.name}
                       width={50}
                       height={50}
-                      className="mr-4 rounded-full"
+                      className="mr-4 w-[50px] h-[50px] rounded-full"
                     />
                     <div>
                       <h3 className="font-semibold">{testimonial.name}</h3>
