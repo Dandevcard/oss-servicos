@@ -30,7 +30,7 @@ const services = [
       "Obtenha insights sobre a dinâmica da sua equipe e melhore a colaboração por meio de análises baseadas em dados.",
     icon: TrendingUp,
     image: img3,
-    url: "/prefilComportamental",
+    url: "/perfilComportamental",
   },
   {
     title: "Consultoria de Gestão",
@@ -108,9 +108,7 @@ export default function Services() {
                   {service.description}
                 </CardDescription>
               </CardContent>
-              <CardFooter className="md:mt-auto -mt-4 pb-2 md:pb-4 gap-2 items-center justify-start">
-                {" "}
-                {/* Empurra o botão para o final */}
+              <CardFooter className="md:-mt-5 -mt-4 pb-2 md:pb-4 gap-2 items-center justify-start">
                 <Button variant={"default"}>
                   <Link href={service.url}>Saiba Mais</Link>
                 </Button>
