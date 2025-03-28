@@ -85,12 +85,12 @@ export default function Services() {
   return (
     <section id="services" className="bg-gray-950 text-gray-100 md:py-10 mb-10 md:mb-0">
       <div className="w-full  pt-10 md:pt-6 flex flex-col items-center">
-        <h2 className="mb-10  text-center text-3xl font-bold font-oxanium  tracking-tighter sm:text-4xl md:text-5xl">
+        <h2 className="mb-7  text-center text-3xl font-bold font-oxanium  tracking-tighter sm:text-4xl md:text-5xl">
           Nossos serviços
         </h2>
         <div className="grid gap-y-6 md:grid-cols-2 xl:grid-cols-3 md:gap-x-6 justify-center">
           {services.map((service, index) => (
-            <Card key={index} className=" md:max-h-[400px] w-[300px] md:w-[370px] flex flex-col">
+            <Card key={index} className=" md:max-h-[400px] w-[340px] md:w-[360px] flex flex-col">
               <Image
                 src={service.image}
                 alt="imgs"

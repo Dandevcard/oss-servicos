@@ -1,32 +1,12 @@
 import Image from "next/image";
-import laaf from "@/imagens/laaf.webp";
-import patrick from "@/imagens/patrick.jpg";
-import Promotora from "@/imagens/melhor.webp";
-import febracis from "@/imagens/febracis1.png";
+
 
 import { Star, Users, BarChart, Award, TrendingUp, Quote } from "lucide-react";
 import foto1 from "@/imagens/02.jpg";
 import { Card, CardContent } from "@/components/ui/card";
-import user3 from "@/imagens/fotouser3.jpg"
+import user3 from "@/imagens/fotouser3.jpg";
 
-const empresas = [
-  {
-    logo: laaf,
-    nome: "Laaf Treinamentos",
-  },
-  {
-    logo: patrick,
-    nome: "Patrick refeições",
-  },
-  {
-    logo: febracis,
-    nome: "Febracis florianópolis",
-  },
-  {
-    logo: Promotora,
-    nome: "Melhor Promotora",
-  },
-];
+
 
 export default function Clientes() {
   return (
@@ -41,38 +21,17 @@ export default function Clientes() {
       <div className="absolute inset-0 bg-black/50"></div>
       <div className=" relative mx-auto  py-12">
         <div className="mb-16 text-center">
-          <h1 className="mb-4 text-4xl font-bold font-oxanium tracking-tight md:text-5xl">
+          <h1 className="mb-5 text-4xl font-bold font-oxanium tracking-tight md:text-5xl">
             Nossos Clientes
           </h1>
           <p className="mx-auto max-w-3xl text-lg text-gray-200 font-montserrat">
-            Orgulhamo-nos de trabalhar com empresas inovadoras e líderes em seus
-            setores. Conheça alguns dos nossos principais clientes e casos de
-            sucesso.
+            Orgulhamo-nos de trabalhar com excelência e ver a vida das pessoas
+            transformadas é o nosso objetivo, veja alguns depoimentos sobre o
+            nosso trabalho!
           </p>
         </div>
 
-        <div className="mb-16 md:px-20">
-          <h2 className="mb-8 text-center text-3xl font-bold font-oxanium">
-            Empresas que Confiam em Nós
-          </h2>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
-            {empresas.map((index) => (
-              <div
-                key={index.nome}
-                className="flex items-center justify-center p-4"
-              >
-                <div className="max-w-28   flex flex-col items-center justify-center">
-                  <Image
-                    width={200}
-                    height={200}
-                    alt="logos"
-                    src={index.logo}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      
 
         {/* Statistics */}
         <div className="mb-10 rounded-lg bg-gray-300 p-8">
@@ -86,7 +45,7 @@ export default function Clientes() {
             </div>
             <div className="flex flex-col items-center">
               <BarChart className="mb-4 h-10 w-10 text-emerald-600" />
-              <h3 className="text-3xl font-bold text-emerald-600">98 &quot;</h3>
+              <h3 className="text-3xl font-bold text-emerald-600">98%</h3>
               <p className="text-muted-foreground">Taxa de Satisfação</p>
             </div>
             <div className="flex flex-col items-center">
@@ -109,7 +68,7 @@ export default function Clientes() {
               {
                 name: "Daniel Cardoso",
                 company: "Tech Solutions",
-                image:user3,
+                image: user3,
                 testimonial:
                   "Trabalhar com esta equipe foi uma experiência transformadora para nossa empresa. A qualidade do serviço e o comprometimento com prazos superaram todas as nossas expectativas.",
                 rating: 5,
