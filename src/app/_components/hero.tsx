@@ -13,7 +13,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="bg-gray-950 text-white pt-24 md:pt-20 mb-6 lg:mb-0">
+    <section id="home" className="bg-gray-950 text-white pt-[105px] md:pt-20 mb-6 lg:mb-0">
       <div className="mx-2 lg:mx-0 md:p-4  flex justify-center  items-start ">
         <div className="  md:w-[765px] py-2 flex flex-col items-center md:items-center lg:items-start   space-y-5 text-center lg:py-24    ">
           <h1 className="text-3xl  font-semibold lg:py-2 font-oxanium text-center lg:text-start tracking-tighter  sm:text-5xl md:text-6xl">

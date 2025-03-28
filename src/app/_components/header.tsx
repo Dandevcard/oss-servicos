@@ -44,7 +44,7 @@ export default function Header() {
 
   return (
     <header
-      className={` fixed top-0 left-0 w-full h-20 md:h-24 z-50 transition-all duration-300  ${
+      className={` fixed top-0 left-0 w-full h-24 md:h-24 z-50 transition-all duration-300  ${
         isMenuOpen
           ? hideOnScroll
             ? "-translate-y-full" // 🔹 Esconde o header quando o menu está aberto e rolamos para baixo
@@ -54,14 +54,14 @@ export default function Header() {
           : "bg-transparent" // 🔹 Header transparente no topo da página
       }`}
     >
-      <div className="flex items-center justify-between pt-6 pb-4 px-8 md:px-12">
+      <div className="flex items-center justify-between pt-10 pb-4 px-8 md:px-12">
         <Link href="#home" className="flex flex-col items-center"
           onClick={(e) => {
             e.preventDefault(); // Previne o comportamento padrão do link
             scrollToSection("#home");
           }}
         >
-          <h2 className="text-3xl lg:text-4xl font-semibold font-oxanium text-gray-50">
+          <h2 className="text-4xl lg:text-4xl font-semibold font-oxanium text-gray-50">
             OSS GSC
           </h2>
           <span className="hidden lg:flex text-xs text-gray-400 font-oxanium">
