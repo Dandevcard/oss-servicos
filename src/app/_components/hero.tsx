@@ -23,7 +23,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="w-[340px] md:min-w-[200px] max-w-[500] md:w-[750px] md:max-w[1000]  text-lg md:text-lg lg:text-xl text-center lg:text-start text-gray-100 font-oxanium sm:text-xl  ">
-            <span className=" shadow-sm">Consultoria</span> e
+            <span className=" shadow-sm">Consultoria e </span>
             <span className="  shadow-sm">coaching </span>especializados para
             elevar o desempenho da sua equipe e impulsionar o sucesso do
             negócio.
